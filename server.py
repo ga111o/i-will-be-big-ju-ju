@@ -13,7 +13,7 @@ st.set_page_config(
 
 st.title("나이가되었기에`대주주`가되기위하여하나씩")
 
-company = st.text_input("Enter the company name:", "")
+company = st.text_input("company name:", "")
 
 model_options = ["gpt-4o", "gpt-3.5-turbo", "llama3:8b", "llama3:70b"]
 selected_model = st.selectbox("Select the model:", model_options)
@@ -73,8 +73,7 @@ if st.button("Run Analysis"):
     
     st.write("Result:", result)
 
-# Markdown 파일 읽기 섹션
-st.sidebar.title("Markdown 파일 보기")
+st.sidebar.title("outputs")
 
 def list_files_in_directory(directory):
     files = []
