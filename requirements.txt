@@ -17,3 +17,4 @@ python-dotenv==1.0.1
 tiktoken==0.5.2
 yfinance==0.2.40
 flask==3.0.3
+streamlit
